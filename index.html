@@ -3,29 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cauce · Consultoría de impacto — Federico Besio</title>
+<title>Cauce · Comunicación Estratégica — Federico Besio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400;1,600&family=Nunito+Sans:wght@300;400;500;600&family=Newsreader:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --ink:       #1a1a18;
-    --paper:     #f6f4ef;
-    --moss:      #3d5a3e;
-    --sage:      #7a9e7e;
-    --sand:      #c9b99a;
-    --warm:      #e8e2d7;
-    --accent:    #2e4a2f;
-    --muted:     #7a7a72;
-    --serif:     'Fraunces', Georgia, serif;
-    --sans:      'Nunito Sans', system-ui, sans-serif;
-    --quote:     'Newsreader', Georgia, serif;
-  }
-
+    --ink: #1a1a18;
+    --paper: #f6f4ef;
+    --moss: #3d5a3e;
+    --sage: #7a9e7e;
+    --sand: #c9b99a;
+    --warm: #e8e2d7;
+    --accent: #2e4a2f;
+    --muted: #7a7a72;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Nunito Sans', system-ui, sans-serif;
+    --quote: 'Newsreader', Georgia, serif;
+}
   html { scroll-behavior: smooth; }
-
   body {
     background: var(--paper);
     color: var(--ink);
@@ -33,8 +30,7 @@
     font-weight: 300;
     line-height: 1.6;
     font-size: 16px;
-  }
-
+}
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
@@ -42,8 +38,8 @@
     background: rgba(246, 244, 239, 0.92);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--warm);
-  }
-  .nav-logo {
+}
+.nav-logo {
     display: flex;
     align-items: center;
     gap: 0.7rem;
@@ -52,21 +48,20 @@
     color: var(--accent);
     text-decoration: none;
     letter-spacing: 0.01em;
-  }
-  .nav-logo svg { display: block; }
-  .nav-links {
+}
+.nav-logo svg { display: block; }
+.nav-links {
     display: flex; gap: 2rem; list-style: none;
-  }
-  .nav-links a {
+}
+.nav-links a {
     font-size: 0.82rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--muted);
     text-decoration: none;
     transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--moss); }
-
+}
+.nav-links a:hover { color: var(--moss); }
   #hero {
     min-height: 100vh;
     display: grid;
@@ -77,27 +72,27 @@
     gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  .hero-text {}
-  .hero-eyebrow {
+}
+.hero-text {}
+.hero-eyebrow {
     font-size: 0.78rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--sage);
     margin-bottom: 1.5rem;
-  }
-  .hero-title {
+}
+.hero-title {
     font-family: var(--serif);
     font-size: clamp(3rem, 6vw, 5.5rem);
     line-height: 1.0;
     color: var(--ink);
     margin-bottom: 1.8rem;
-  }
-  .hero-title em {
+}
+.hero-title em {
     font-style: italic;
     color: var(--moss);
-  }
-  .hero-quote {
+}
+.hero-quote {
     font-family: var(--quote);
     font-style: italic;
     font-size: 1.1rem;
@@ -107,8 +102,8 @@
     padding-left: 1.2rem;
     margin-bottom: 2.5rem;
     max-width: 480px;
-  }
-  .hero-cta {
+}
+.hero-cta {
     display: inline-flex; align-items: center; gap: 0.7rem;
     background: var(--moss);
     color: white;
@@ -118,17 +113,16 @@
     letter-spacing: 0.05em;
     font-weight: 500;
     transition: background 0.2s, transform 0.15s;
-  }
-  .hero-cta:hover { background: var(--accent); transform: translateY(-2px); }
-  .hero-cta-arrow { font-size: 1.1rem; }
-
-  .hero-visual {
+}
+.hero-cta:hover { background: var(--accent); transform: translateY(-2px); }
+.hero-cta-arrow { font-size: 1.1rem; }
+.hero-visual {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     align-items: flex-end;
-  }
-  .hero-card {
+}
+.hero-card {
     background: white;
     border: 1px solid var(--warm);
     padding: 1.5rem 1.8rem;
@@ -136,302 +130,301 @@
     max-width: 360px;
     position: relative;
     transition: transform 0.25s, box-shadow 0.25s;
-  }
-  .hero-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(61,90,62,0.10); }
-  .hero-card-label {
+}
+.hero-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(61,90,62,0.10); }
+.hero-card-label {
     font-size: 0.72rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--sage);
     margin-bottom: 0.6rem;
-  }
-  .hero-card-value {
+}
+.hero-card-value {
     font-family: var(--serif);
     font-size: 1.9rem;
     color: var(--ink);
     line-height: 1.1;
-  }
-  .hero-card-sub {
+}
+.hero-card-sub {
     font-size: 0.82rem;
     color: var(--muted);
     margin-top: 0.3rem;
-  }
-  .card-dot {
+}
+.card-dot {
     position: absolute; top: 1.2rem; right: 1.2rem;
     width: 8px; height: 8px;
     border-radius: 50%;
     background: var(--sage);
-  }
-
+}
   section { padding: 6rem 4vw; }
-  .container { max-width: 1100px; margin: 0 auto; }
-  .section-label {
+.container { max-width: 1100px; margin: 0 auto; }
+.section-label {
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--sage);
     margin-bottom: 1rem;
-  }
-  .section-title {
+}
+.section-title {
     font-family: var(--serif);
     font-size: clamp(2rem, 4vw, 3.2rem);
     line-height: 1.1;
     margin-bottom: 1rem;
     color: var(--ink);
-  }
-  .section-title em { font-style: italic; color: var(--moss); }
-  .section-intro {
+}
+.section-title em { font-style: italic; color: var(--moss); }
+.section-intro {
     font-size: 1.05rem;
     color: var(--muted);
     max-width: 560px;
     line-height: 1.75;
     margin-bottom: 3.5rem;
-  }
-
+}
   #audiencias { background: var(--warm); }
-  .audience-grid {
+.audience-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5px;
     background: var(--sand);
     border: 1.5px solid var(--sand);
-  }
-  .audience-item {
+}
+.audience-item {
     background: var(--warm);
     padding: 2rem 1.5rem;
     transition: background 0.2s;
-  }
-  .audience-item:hover { background: white; }
-  .audience-icon { font-size: 2rem; margin-bottom: 1rem; }
-  .audience-name {
+}
+.audience-item:hover { background: white; }
+.audience-icon { font-size: 2rem; margin-bottom: 1rem; }
+.audience-name {
     font-family: var(--serif);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: var(--ink);
-  }
-  .audience-desc { font-size: 0.87rem; color: var(--muted); line-height: 1.55; }
-
-  #servicios { background: var(--paper); }
-  .services-list { display: flex; flex-direction: column; gap: 0; }
-  .service-item {
+}
+.audience-desc { font-size: 0.87rem; color: var(--muted); line-height: 1.55; }
+  #servicio { background: var(--paper); }
+.servicio-intro-row {
     display: grid;
-    grid-template-columns: 80px 1fr auto;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    margin-bottom: 3.5rem;
     align-items: start;
-    gap: 2rem;
-    padding: 2.5rem 0;
-    border-top: 1px solid var(--warm);
-    cursor: default;
-    transition: background 0.2s;
-  }
-  .service-item:last-child { border-bottom: 1px solid var(--warm); }
-  .service-num {
-    font-family: var(--serif);
-    font-size: 2.5rem;
-    color: var(--sand);
-    line-height: 1;
-    padding-top: 0.2rem;
-  }
-  .service-body {}
-  .service-name {
-    font-family: var(--serif);
-    font-size: 1.55rem;
-    margin-bottom: 0.6rem;
+}
+.servicio-lede {
+    font-size: 1.15rem;
     color: var(--ink);
-  }
-  .service-desc {
-    font-size: 0.93rem;
+    line-height: 1.75;
+    font-weight: 300;
+}
+.servicio-lede strong { font-weight: 600; color: var(--moss); }
+.servicio-frame {
+    background: white;
+    border: 1px solid var(--warm);
+    border-left: 3px solid var(--moss);
+    padding: 1.6rem 1.8rem;
+    font-family: var(--quote);
+    font-style: italic;
+    font-size: 1.02rem;
     color: var(--muted);
     line-height: 1.7;
-    max-width: 560px;
-    margin-bottom: 1rem;
-  }
-  .service-tags {
-    display: flex; flex-wrap: wrap; gap: 0.5rem;
-  }
-  .tag {
-    font-size: 0.74rem;
-    letter-spacing: 0.06em;
-    background: var(--warm);
-    color: var(--moss);
-    padding: 0.3rem 0.75rem;
-    border: 1px solid var(--sand);
-  }
-  .service-arrow {
-    font-size: 1.5rem;
+}
+.includes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5px;
+    background: var(--sand);
+    border: 1.5px solid var(--sand);
+    margin-bottom: 1.2rem;
+}
+.includes-item {
+    background: white;
+    padding: 2rem 1.6rem;
+    transition: background 0.2s;
+}
+.includes-item:hover { background: var(--warm); }
+.includes-num {
+    font-family: var(--serif);
+    font-size: 1.6rem;
     color: var(--sand);
-    align-self: center;
-    transition: color 0.2s, transform 0.2s;
-    padding-top: 0.2rem;
-  }
-  .service-item:hover .service-arrow { color: var(--moss); transform: translateX(4px); }
-
+    margin-bottom: 0.8rem;
+}
+.includes-name {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+}
+.includes-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.55; }
+.scope-note {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: var(--warm);
+    border: 1px solid var(--sand);
+    padding: 1.3rem 1.6rem;
+    margin-top: 2rem;
+}
+.scope-note-icon { font-size: 1.2rem; line-height: 1.4; }
+.scope-note-text { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+.scope-note-text strong { color: var(--ink); font-weight: 600; }
   #porque { background: var(--ink); color: var(--paper); }
   #porque .section-title { color: var(--paper); }
   #porque .section-intro { color: var(--sand); }
   #porque .section-label { color: var(--sage); }
-  .reasons-grid {
+.reasons-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2px;
     background: #2e2e2a;
-  }
-  .reason-item {
+}
+.reason-item {
     background: var(--ink);
     padding: 2.5rem 2rem;
     transition: background 0.2s;
     border: 1px solid transparent;
-  }
-  .reason-item:hover { background: #262620; border-color: var(--moss); }
-  .reason-icon {
+}
+.reason-item:hover { background: #262620; border-color: var(--moss); }
+.reason-icon {
     width: 40px; height: 40px;
     border: 1px solid var(--moss);
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     font-size: 1.1rem;
     margin-bottom: 1.2rem;
-  }
-  .reason-title {
+}
+.reason-title {
     font-family: var(--serif);
     font-size: 1.3rem;
     color: var(--paper);
     margin-bottom: 0.7rem;
     line-height: 1.2;
-  }
-  .reason-desc { font-size: 0.88rem; color: #a09e97; line-height: 1.7; }
-
+}
+.reason-desc { font-size: 0.88rem; color: #a09e97; line-height: 1.7; }
   #proceso { background: var(--paper); }
-  .process-steps {
+.timeline { display: flex; flex-direction: column; }
+.timeline-item {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-  }
-  .process-step {
-    background: white;
-    border: 1px solid var(--warm);
-    padding: 2rem 1.8rem;
-    position: relative;
-  }
-  .step-letter {
+    grid-template-columns: 96px 1fr auto;
+    gap: 1.6rem;
+    align-items: start;
+    padding: 1.7rem 0;
+    border-top: 1px solid var(--warm);
+}
+.timeline-item:last-child { border-bottom: 1px solid var(--warm); }
+.timeline-item.is-free { background: var(--warm); margin: 0 -1.5rem; padding: 1.7rem 1.5rem; border-top: 1px solid var(--sand); border-bottom: 1px solid var(--sand); }
+.timeline-phase {
     font-family: var(--serif);
-    font-size: 3.5rem;
-    color: var(--warm);
-    line-height: 1;
-    margin-bottom: 1rem;
-  }
-  .step-title {
-    font-family: var(--serif);
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: var(--ink);
-  }
-  .step-subtitle {
-    font-size: 0.78rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: 0.95rem;
     color: var(--sage);
-    margin-bottom: 1rem;
-  }
-  .step-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
-  .step-list {
-    list-style: none;
-    margin-top: 1rem;
-  }
-  .step-list li {
-    font-size: 0.84rem;
+    letter-spacing: 0.02em;
+    padding-top: 0.2rem;
+}
+.timeline-body {}
+.timeline-name {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    color: var(--ink);
+    margin-bottom: 0.35rem;
+}
+.timeline-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; max-width: 520px; }
+.timeline-time {
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     color: var(--muted);
-    padding: 0.35rem 0;
-    border-bottom: 1px solid var(--warm);
-    display: flex; gap: 0.5rem;
-  }
-  .step-list li::before { content: '—'; color: var(--sand); flex-shrink: 0; }
-
+    white-space: nowrap;
+    padding-top: 0.3rem;
+    text-align: right;
+}
+.timeline-time span { display: block; font-size: 0.7rem; color: var(--sage); margin-top: 0.2rem; }
   #precios { background: var(--warm); }
-  .pricing-grid {
+.pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-  }
-  .price-card {
+}
+.price-card {
     background: white;
     padding: 2.2rem 1.8rem;
     border: 1px solid var(--warm);
     position: relative;
     transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .price-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(61,90,62,0.12); }
-  .price-card.featured {
+}
+.price-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(61,90,62,0.12); }
+.price-card.featured {
     background: var(--moss);
     border-color: var(--moss);
     color: white;
-  }
-  .price-card.featured .price-label,
-  .price-card.featured .price-desc,
-  .price-card.featured .price-includes { color: rgba(255,255,255,0.75); }
-  .price-card.featured .price-value,
-  .price-card.featured .price-name { color: white; }
-  .price-label {
+}
+.price-card.featured .price-label,
+.price-card.featured .price-desc,
+.price-card.featured .price-includes { color: rgba(255,255,255,0.75); }
+.price-card.featured .price-value,
+.price-card.featured .price-name { color: white; }
+.price-label {
     font-size: 0.74rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--sage);
     margin-bottom: 0.8rem;
-  }
-  .price-name {
+}
+.price-name {
     font-family: var(--serif);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: var(--ink);
-  }
-  .price-value {
+}
+.price-value {
     font-family: var(--serif);
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     color: var(--moss);
     margin: 1rem 0 0.3rem;
-    line-height: 1;
-  }
-  .price-period {
+    line-height: 1.15;
+}
+.price-period {
     font-size: 0.83rem;
     color: var(--muted);
     margin-bottom: 1.5rem;
-  }
-  .price-card.featured .price-period { color: rgba(255,255,255,0.65); }
-  .price-desc {
+}
+.price-card.featured .price-period { color: rgba(255,255,255,0.65); }
+.price-desc {
     font-size: 0.87rem;
     color: var(--muted);
     line-height: 1.6;
     margin-bottom: 1.2rem;
-  }
-  .price-includes {
-    font-size: 0.78rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 0.6rem;
-  }
-
+}
+.price-cap {
+    font-size: 0.76rem;
+    letter-spacing: 0.03em;
+    color: var(--sage);
+    border-top: 1px solid var(--warm);
+    padding-top: 0.9rem;
+    margin-top: 0.4rem;
+}
+.price-card.featured .price-cap { color: var(--sand); border-top-color: rgba(255,255,255,0.2); }
   #contacto {
     background: var(--ink);
     text-align: center;
     padding: 7rem 4vw;
-  }
+}
   #contacto .section-label { text-align: center; }
-  .cta-title {
+.cta-title {
     font-family: var(--serif);
     font-size: clamp(2.5rem, 5vw, 4rem);
     color: var(--paper);
     margin-bottom: 1rem;
     line-height: 1.1;
-  }
-  .cta-title em { font-style: italic; color: var(--sage); }
-  .cta-sub {
+}
+.cta-title em { font-style: italic; color: var(--sage); }
+.cta-sub {
     font-size: 1.05rem;
     color: #a09e97;
     margin-bottom: 2.5rem;
-  }
-  .cta-buttons {
+}
+.cta-buttons {
     display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;
-  }
-  .btn-primary {
+}
+.btn-primary {
     background: var(--sage);
     color: white;
     text-decoration: none;
@@ -441,9 +434,9 @@
     letter-spacing: 0.04em;
     transition: background 0.2s;
     font-family: var(--sans);
-  }
-  .btn-primary:hover { background: var(--moss); }
-  .btn-secondary {
+}
+.btn-primary:hover { background: var(--moss); }
+.btn-secondary {
     background: transparent;
     color: var(--paper);
     text-decoration: none;
@@ -453,17 +446,16 @@
     border: 1px solid #3a3a36;
     transition: border-color 0.2s, color 0.2s;
     font-family: var(--sans);
-  }
-  .btn-secondary:hover { border-color: var(--sage); color: var(--sage); }
-  .contact-info {
+}
+.btn-secondary:hover { border-color: var(--sage); color: var(--sage); }
+.contact-info {
     margin-top: 3rem;
     font-size: 0.85rem;
     color: #5a5a54;
     display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
-  }
-  .contact-info a { color: #5a5a54; text-decoration: none; transition: color 0.2s; }
-  .contact-info a:hover { color: var(--sage); }
-
+}
+.contact-info a { color: #5a5a54; text-decoration: none; transition: color 0.2s; }
+.contact-info a:hover { color: var(--sage); }
   footer {
     background: #111110;
     padding: 2rem 4vw;
@@ -471,350 +463,39 @@
     font-size: 0.78rem;
     color: #3a3a36;
     letter-spacing: 0.05em;
-  }
-
+}
   @media (max-width: 900px) {
     #hero { grid-template-columns: 1fr; min-height: auto; padding-top: 100px; padding-bottom: 4rem; }
-    .hero-visual { align-items: flex-start; }
-    .audience-grid { grid-template-columns: 1fr 1fr; }
-    .service-item { grid-template-columns: 60px 1fr; }
-    .service-arrow { display: none; }
-    .reasons-grid { grid-template-columns: 1fr; }
-    .process-steps { grid-template-columns: 1fr; }
-    .pricing-grid { grid-template-columns: 1fr; }
-    .nav-links { display: none; }
-  }
+.hero-visual { align-items: flex-start; }
+.audience-grid { grid-template-columns: 1fr 1fr; }
+.includes-grid { grid-template-columns: 1fr 1fr; }
+.servicio-intro-row { grid-template-columns: 1fr; }
+.reasons-grid { grid-template-columns: 1fr; }
+.timeline-item { grid-template-columns: 60px 1fr; }
+.timeline-time { grid-column: 2; text-align: left; padding-top: 0; }
+.pricing-grid { grid-template-columns: 1fr; }
+.nav-links { display: none; }
+}
   @media (max-width: 600px) {
-    .audience-grid { grid-template-columns: 1fr; }
-    .hero-title { font-size: 2.8rem; }
-  }
-
-  .reveal {
+.audience-grid { grid-template-columns: 1fr; }
+.includes-grid { grid-template-columns: 1fr; }
+.hero-title { font-size: 2.8rem; }
+}
+.reveal {
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.65s ease, transform 0.65s ease;
-  }
-  .reveal.visible {
+}
+.reveal.visible {
     opacity: 1;
     transform: none;
-  }
+}
 </style>
 </head>
 <body>
-
 <nav>
   <a href="#hero" class="nav-logo">
     <svg width="44" height="44" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
       <path d="M 129.8 97.9 A 66 66 0 1 1 129.8 42.1" fill="none" stroke="#7a9e7e" stroke-width="6" opacity="0.55"/>
       <path d="M 111.7 89.4 A 46 46 0 1 1 111.7 50.6" fill="none" stroke="#7a9e7e" stroke-width="6" opacity="0.8"/>
-      <path d="M 94.5 81.4 A 27 27 0 1 1 94.5 58.6" fill="none" stroke="#2e4a2f" stroke-width="8"/>
-      <path d="M 140 70 L 172 70" stroke="#c97c5d" stroke-width="8" stroke-linecap="round"/>
-      <circle cx="70" cy="70" r="9" fill="#c79a4b"/>
-    </svg>
-    Cauce
-  </a>
-  <ul class="nav-links">
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#porque">Por qué yo</a></li>
-    <li><a href="#proceso">Proceso</a></li>
-    <li><a href="#precios">Honorarios</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
-</nav>
-
-<section id="hero">
-  <div class="hero-text reveal">
-    <p class="hero-eyebrow">Consultor de Impacto · Montevideo, Uruguay</p>
-    <h1 class="hero-title">
-      Comunicación<br>
-      que <em>genera</em><br>
-      cambio real.
-    </h1>
-    <p class="hero-quote">
-      "Creo que los negocios tienen un enorme potencial para impulsar cambios sociales y ambientales relevantes cuando son capaces de crear valor genuino."
-    </p>
-    <a href="https://calendly.com/federicom-besio/30min" target="_blank" class="hero-cta">
-      Diagnóstico gratuito <span class="hero-cta-arrow">→</span>
-    </a>
-  </div>
-  <div class="hero-visual reveal">
-    <div class="hero-card">
-      <div class="card-dot"></div>
-      <div class="hero-card-label">Trayectoria</div>
-      <div class="hero-card-value">+10 años</div>
-      <div class="hero-card-sub">Liderando proyectos de digitalización y comunicación a escala nacional</div>
-    </div>
-    <div class="hero-card">
-      <div class="card-dot"></div>
-      <div class="hero-card-label">Foco</div>
-      <div class="hero-card-value">Impacto &amp; UX</div>
-      <div class="hero-card-sub">Comunicación estratégica, experiencia de usuario y transformación digital</div>
-    </div>
-    <div class="hero-card">
-      <div class="card-dot"></div>
-      <div class="hero-card-label">Primera reunión</div>
-      <div class="hero-card-value">Gratuita</div>
-      <div class="hero-card-sub">Diagnóstico de 60–90 min. Solo avanzo si creo que puedo generar valor real.</div>
-    </div>
-  </div>
-</section>
-
-<section id="audiencias">
-  <div class="container">
-    <p class="section-label reveal">¿A quién me dirijo?</p>
-    <h2 class="section-title reveal">Emprendedores y mypimes que creen que <em>crecer y hacer el bien</em> pueden ir de la mano.</h2>
-    <p class="section-intro reveal">Trabajo con equipos que tienen propósito claro pero necesitan comunicarlo mejor, digitalizarse o validar su camino.</p>
-    <div class="audience-grid reveal">
-      <div class="audience-item">
-        <div class="audience-icon">🎯</div>
-        <div class="audience-name">Emprendimientos con propósito</div>
-        <div class="audience-desc">Startups y proyectos en etapa de crecimiento con misión de impacto.</div>
-      </div>
-      <div class="audience-item">
-        <div class="audience-icon">🏢</div>
-        <div class="audience-name">Pymes con vocación social</div>
-        <div class="audience-desc">Empresas que quieren comunicar mejor su propuesta de valor.</div>
-      </div>
-      <div class="audience-item">
-        <div class="audience-icon">♻️</div>
-        <div class="audience-name">Economía circular</div>
-        <div class="audience-desc">Organizaciones orientadas al consumo consciente y mercados verdes.</div>
-      </div>
-      <div class="audience-item">
-        <div class="audience-icon">❤️</div>
-        <div class="audience-name">ONG y entidades sociales</div>
-        <div class="audience-desc">Organizaciones que necesitan fortalecer su comunicación y alcance.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="servicios">
-  <div class="container">
-    <p class="section-label reveal">Servicios</p>
-    <h2 class="section-title reveal">Lo que puedo hacer <em>por tu emprendimiento o mypime.</em></h2>
-    <p class="section-intro reveal">Cuatro áreas de trabajo que se pueden combinar según lo que el proyecto necesite.</p>
-    <div class="services-list">
-
-      <div class="service-item reveal">
-        <div class="service-num">01</div>
-        <div class="service-body">
-          <div class="service-name">Comunicación estratégica con propósito</div>
-          <div class="service-desc">Ayudo a emprendedores y mypimes a articular claramente su propuesta de valor, su misión y su impacto. Desarrollo planes de comunicación orientados a generar mayor adopción, conectar con audiencias relevantes y amplificar el alcance de iniciativas con propósito.</div>
-          <div class="service-tags">
-            <span class="tag">Branding narrativo</span>
-            <span class="tag">Plan de comunicación</span>
-            <span class="tag">Contenidos estratégicos</span>
-            <span class="tag">Comunicación interna</span>
-          </div>
-        </div>
-        <div class="service-arrow">→</div>
-      </div>
-
-      <div class="service-item reveal">
-        <div class="service-num">02</div>
-        <div class="service-body">
-          <div class="service-name">Experiencia de usuario (UX) y transformación digital</div>
-          <div class="service-desc">Acompaño procesos de digitalización poniendo a las personas en el centro. Analizo comportamiento digital, identifico fricciones en la experiencia y propongo mejoras concretas. Incorporo Design Thinking para que los cambios sean adoptados de forma sostenible.</div>
-          <div class="service-tags">
-            <span class="tag">Auditoría UX</span>
-            <span class="tag">Arquitectura de información</span>
-            <span class="tag">Google Analytics</span>
-            <span class="tag">Design Thinking</span>
-          </div>
-        </div>
-        <div class="service-arrow">→</div>
-      </div>
-
-      <div class="service-item reveal">
-        <div class="service-num">03</div>
-        <div class="service-body">
-          <div class="service-name">Modernización y optimización de procesos</div>
-          <div class="service-desc">Identifico procesos manuales, ineficientes o desactualizados y los rediseño incorporando herramientas digitales ya disponibles. He liderado proyectos de digitalización a escala nacional con foco en eficiencia operativa y adopción interna.</div>
-          <div class="service-tags">
-            <span class="tag">Mapeo de procesos</span>
-            <span class="tag">Automatización</span>
-            <span class="tag">Gestión del cambio</span>
-            <span class="tag">Capacitaciones</span>
-          </div>
-        </div>
-        <div class="service-arrow">→</div>
-      </div>
-
-      <div class="service-item reveal">
-        <div class="service-num">04</div>
-        <div class="service-body">
-          <div class="service-name">Validación de modelos y estrategia de producto</div>
-          <div class="service-desc">Para emprendimientos en etapas tempranas, acompaño en investigación de usuarios, validación de hipótesis y testeo de MVPs. Experiencia directa en proyectos de economía circular, marketplaces sostenibles y plataformas de impacto.</div>
-          <div class="service-tags">
-            <span class="tag">Research de usuarios</span>
-            <span class="tag">Validación de hipótesis</span>
-            <span class="tag">MVP testing</span>
-            <span class="tag">Go-to-market</span>
-          </div>
-        </div>
-        <div class="service-arrow">→</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="porque">
-  <div class="container">
-    <p class="section-label reveal">Por qué trabajar conmigo</p>
-    <h2 class="section-title reveal">Experiencia real.<br><em>Compromiso genuino.</em></h2>
-    <p class="section-intro reveal">No soy consultor de manual. Vengo de hacer el trabajo desde adentro, durante años.</p>
-    <div class="reasons-grid reveal">
-      <div class="reason-item">
-        <div class="reason-icon">🏛️</div>
-        <div class="reason-title">Experiencia real con emprendedores y mypimes</div>
-        <div class="reason-desc">Más de 10 años en ANDA liderando proyectos de digitalización, comunicación institucional y mejora de experiencia. Proyectos ejecutados a escala nacional.</div>
-      </div>
-      <div class="reason-item">
-        <div class="reason-icon">🌱</div>
-        <div class="reason-title">Compromiso genuino con el impacto</div>
-        <div class="reason-desc">Cofundé The Mercadito Sustentable y colaboré con Impulsa Verde. El propósito no es un diferencial de marketing para mí — es el motivo por el que hago este trabajo.</div>
-      </div>
-      <div class="reason-item">
-        <div class="reason-icon">🧭</div>
-        <div class="reason-title">Enfoque centrado en personas</div>
-        <div class="reason-desc">Tanto en UX como en comunicación, parto siempre de comprender a las personas: sus necesidades, sus contextos, sus fricciones. Las soluciones que propongo están diseñadas desde ahí.</div>
-      </div>
-      <div class="reason-item">
-        <div class="reason-icon">⚡</div>
-        <div class="reason-title">Versatilidad estratégica y operativa</div>
-        <div class="reason-desc">Puedo colaborar desde la definición estratégica hasta la ejecución concreta. Trabajo bien tanto con equipos técnicos como con directivos y personas sin formación digital.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="proceso">
-  <div class="container">
-    <p class="section-label reveal">¿Cómo trabajamos juntos?</p>
-    <h2 class="section-title reveal">Tres formatos.<br><em>Un punto de partida.</em></h2>
-    <p class="section-intro reveal">Todo empieza con un diagnóstico gratuito. A partir de ahí elegimos el formato que mejor se adapta al proyecto.</p>
-    <div class="process-steps">
-
-      <div class="process-step reveal">
-        <div class="step-letter">A</div>
-        <div class="step-subtitle">Proyecto puntual</div>
-        <div class="step-title">Objetivo claro, entregable concreto</div>
-        <div class="step-desc">Cuando hay un objetivo definido. Incluye sesiones de trabajo y un entregable: estrategia de comunicación o branding narrativo.</div>
-        <ul class="step-list">
-          <li>Sesión de profundización (90 min)</li>
-          <li>Sesión de co-construcción (90 min)</li>
-          <li>Sesión de revisión y cierre (60 min)</li>
-          <li>Duración: 2 a 4 semanas</li>
-        </ul>
-      </div>
-
-      <div class="process-step reveal">
-        <div class="step-letter">B</div>
-        <div class="step-subtitle">Acompañamiento mensual</div>
-        <div class="step-title">Proceso continuo y seguimiento</div>
-        <div class="step-desc">Cuando el proceso requiere presencia sostenida. Ideal para emprendedores y mypimes en crecimiento o transformación.</div>
-        <ul class="step-list">
-          <li>2 sesiones mensuales (60–90 min)</li>
-          <li>Revisión de materiales entre sesiones</li>
-          <li>Seguimiento por WhatsApp o email</li>
-          <li>Duración mínima: 3 meses</li>
-        </ul>
-      </div>
-
-      <div class="process-step reveal">
-        <div class="step-letter">C</div>
-        <div class="step-subtitle">Taller de capacitación</div>
-        <div class="step-title">Herramientas para tu equipo</div>
-        <div class="step-desc">Cuando el equipo necesita herramientas concretas. Temática, formato y duración definidos con el cliente.</div>
-        <ul class="step-list">
-          <li>Narrativa de marca y mensajes clave</li>
-          <li>Comunicación de impacto</li>
-          <li>Gestión de redes sociales</li>
-          <li>Material de apoyo incluido</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="precios">
-  <div class="container">
-    <p class="section-label reveal">Honorarios orientativos</p>
-    <h2 class="section-title reveal">Cada propuesta<br><em>surge del diagnóstico.</em></h2>
-    <p class="section-intro reveal">Los rangos de referencia se adaptan siempre al proyecto real. Para ONGs e iniciativas con recursos limitados, estoy abierto a explorar alternativas.</p>
-    <div class="pricing-grid">
-
-      <div class="price-card reveal">
-        <div class="price-label">Para empezar</div>
-        <div class="price-name">Diagnóstico inicial</div>
-        <div class="price-value">Gratis</div>
-        <div class="price-period">60–90 minutos</div>
-        <div class="price-desc">Conversación para entender tu contexto, tus desafíos y tus oportunidades. Salís con un resumen de observaciones y una propuesta concreta.</div>
-      </div>
-
-      <div class="price-card featured reveal">
-        <div class="price-label">Más solicitado</div>
-        <div class="price-name">Proyecto puntual</div>
-        <div class="price-value">USD 400–700</div>
-        <div class="price-period">Proyecto completo · 2–4 semanas</div>
-        <div class="price-desc">3 sesiones de trabajo + entregable final: estrategia de comunicación o branding narrativo.</div>
-      </div>
-
-      <div class="price-card reveal">
-        <div class="price-label">Proceso sostenido</div>
-        <div class="price-name">Acompañamiento mensual</div>
-        <div class="price-value">USD 300–500</div>
-        <div class="price-period">por mes · mínimo 3 meses</div>
-        <div class="price-desc">2 sesiones mensuales + revisión de materiales + seguimiento continuo. Foco mes a mes según etapa del proceso.</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="contacto">
-  <div class="container">
-    <p class="section-label">Primera reunión, sin costo</p>
-    <h2 class="cta-title">¿Tenemos algo<br><em>en común?</em></h2>
-    <p class="cta-sub">Solo avanzo si creo que puedo generar valor real. Hablemos.</p>
-    <div class="cta-buttons">
-      <a href="https://calendly.com/federicom-besio/30min" target="_blank" class="btn-primary">Agendar diagnóstico gratuito</a>
-      <a href="https://wa.me/59893828982" class="btn-secondary">WhatsApp directo</a>
-    </div>
-    <div class="contact-info">
-      <a href="mailto:federicom.besio@gmail.com">federicom.besio@gmail.com</a>
-      <a href="tel:+59893828982">093 828 982</a>
-      <span>Montevideo, Uruguay</span>
-    </div>
-  </div>
-</section>
-
-<footer>
-  Cauce · Federico Besio, consultor de impacto · Montevideo, Uruguay
-</footer>
-
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        const children = e.target.querySelectorAll('.hero-card, .audience-item, .service-item, .reason-item, .process-step, .price-card');
-        children.forEach((child, i) => {
-          setTimeout(() => child.classList.add('visible'), i * 80);
-        });
-      }
-    });
-  }, { threshold: 0.08 });
-
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-  document.querySelectorAll('.hero-card, .audience-item, .reason-item, .process-step, .price-card').forEach(el => {
-    el.classList.add('reveal');
-    observer.observe(el);
-  });
-</script>
-</body>
-</html>
+      <path d="M 94.5 81.4 A 27 27 0 1 1 94.5 58.6" fill="none" stroke="#2e4a2f"
